@@ -46,13 +46,45 @@
       <p>En esta pagina les cuento mi experiencia como mis conocimiento en informatica</p> 
       <a href="img/cv.pdf" target="_blank" class="btn btn-warning"><i class="fas fa-sort-down"></i> MI CV</a><!--button para entrar en el enlace-->
     </div>
-
-    
     <!---------------------------------------------------------------->
-    <div class="container text-center py-3">
+    <div class="container text-center" id="2" >
+      <h3 class="font-italic text-center">ACERCAD DE MI</h3>
+      <div class="row align-items-center"><!--para centrar totalmente el texto al medio del contenedor-->
+        <div class="col-sm-6">
+            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci distinctio voluptas necessitatibus eos iste dolorum corrupti. Explicabo, hic libero amet, veniam nobis at iusto sapiente excepturi illo ad dolorem veritatis.</p> 
+        </div>
+        <div class="col-sm-6">
+          <img src="img/img1.jpg" class="rounded" alt="Cinque Terre" width="300" height="300">
+        </div>
+      </div>
+    </div>
+    <br>
+    <!---------------------------------------------------------------->
+    <div class="container py-3 text-center bg-light table-bordered">
+      <h2>MI PORTAFOLIO</h2>
+      <!--button id="button1" class="btn btn-danger m-2 w-20">load data</button-->
+      <button id="button2" class="btn btn-danger m-2 w-20" onclick="loadjson()">OBSERVE MIS PROYECTOS</button>
+      
+      <table class="table" >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Proyecto</th>
+            <th scope="col">Link</th>
+          </tr>
+          
+        </thead>
+        <tbody id="result"></tbody>
+
+      </table>
+      <!--div id="result"></div-->
+    </div>
+
+    <!---------------------------------------------------------------->
+    <div class="container text-center py-3 bg-primary">
       <h2 id="titulo" class="display-4 py-5">cambio de color</h2>
       <!--input type="text" id="color" class="form-control my-1" placeholder="ingrese dato"-->
-      <button id="boton" class="btn btn-primary" onclick="btn()">AZUL</button>
+      <button id="boton" class="btn btn-dark" onclick="btn()">NEGRO</button>
 
       <button id="boton1" class="btn btn-success" onclick="btn1()">VERDE</button>
       
@@ -60,52 +92,20 @@
     </div>
 
   <!---------------------------------------------------------------->
-  <div id="general" class="container text-center" class="row">
+  <div id="general" class="container text-center py-3">
     <h2>INGRESE TU NOTA</h2>
-    <p>Te diremos si Aprobaste o Desaprobaste segun tu puntaje</p>
-    <div class="col-sm-12">
+    <p class="text-danger">Te diremos si Aprobaste o Desaprobaste segun tu puntaje</p>
+
+    
       <input id="nota" type="text">
       <button id="btn" onclick="botonNota()">VERIFICANDO</button>
-    </div>
-    <div class="col-sm-12" id="res"></div>
+    
+
+    <div id="res"></div>
+    
   </div>
-<!---------------------------------------------------------------->
-<div class="container my-3 text-center">
-  <button id="button1" class="btn btn-danger w-20">load data</button>
-  <button id="button2" class="btn btn-danger w-20" onclick="loadjson()">json</button>
-  
-  <table class="table" >
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Proyecto</th>
-        <th scope="col">Link</th>
-      </tr>
-      
-    </thead>
-    <tbody id="result"></tbody>
-
-  </table>
-  <!--div id="result"></div-->
-</div>
-
-  <!---------------------------------------------------------------->
-
-
-    <div class="container text-center" id="2" >
-        <h3 class="font-italic text-center">ACERCAD DE MI</h3>
-        <div class="row align-items-center"><!--para centrar totalmente el texto al medio del contenedor-->
-          <div class="col-sm-6">
-              <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci distinctio voluptas necessitatibus eos iste dolorum corrupti. Explicabo, hic libero amet, veniam nobis at iusto sapiente excepturi illo ad dolorem veritatis.</p> 
-          </div>
-          <div class="col-sm-6">
-            <img src="img/img1.jpg" class="rounded" alt="Cinque Terre" width="300" height="300">
-          </div>
-        </div>
-      </div>
-      <br>
     <!---------------------------------------------------------------->
-    <div class="container text-center" id="3">
+    <div class="container text-center py-3 bg-warning" id="3">
         <h3 class="font-italic">CONOCIMIENTO</h3>
         <br>
         <div class="row">
@@ -132,7 +132,7 @@
       <br>
     <!---------------------------------------------------------------->
 
-    <div class="container text-center" id="4">
+    <div class="container text-center py-3" id="4">
       <h3 class="font-italic">EXPERIENCIA</h3>
       <p><em>Mi trayectoria laboral</em></p>
       <br>
@@ -157,7 +157,7 @@
     </div>
     <br>
     <!---------------------------------------------------------------->
-    <div class="bg-dark text-white py-4"><!--py-4 (sirva para aumentar el relleno al vorde del contenedor)-->
+    <div class="bg-dark text-white py-3"><!--py-4 (sirva para aumentar el relleno al vorde del contenedor)-->
       <div class="container">
         <nav class="row">
 

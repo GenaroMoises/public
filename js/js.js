@@ -1,6 +1,6 @@
-//console.log('hola mundo');
+
 function btn(){
-    document.getElementById('titulo').classList.add('text-primary');
+    document.getElementById('titulo').classList.add('text-dark');
     
 }
 function btn1(){
@@ -18,17 +18,17 @@ function botonNota(){
     let respuesta= document.getElementById('res');
     respuesta.innerHTML ='';
     if(nota>=0 && nota<=10){
-        respuesta.innerHTML ='desprobaste';
+        respuesta.innerHTML ='DESAPROBASTES';
     }else if(nota>10 && nota<=13){
-        respuesta.innerHTML ='casi pasas';
+        respuesta.innerHTML ='CASI PASAS';
     }else if(nota>13 && nota<=16){
-        respuesta.innerHTML ='raspando pasas';
+        respuesta.innerHTML ='PASAS RASPANDO';
     }else if(nota>16 && nota<=19){
-        respuesta.innerHTML ='estas bien';
+        respuesta.innerHTML ='ESTAMOS BIEN';
     }else if(nota==20){
-        respuesta.innerHTML ='excelen';
+        respuesta.innerHTML ='EXCELENTE';
     }else {
-        respuesta.innerHTML ='inrese dato';
+        respuesta.innerHTML ='INGRESE TU NOTA';
     }
 
 
