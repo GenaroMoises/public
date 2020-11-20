@@ -60,62 +60,34 @@
     </div>
 
   <!---------------------------------------------------------------->
-  <div id="general" class="container text-center">
-    <h2>ingrese nota</h2>
-    <p>sabremos si desaprobaste o aprobraste</p>
-    <input id="nota" type="text">
-    <button id="btn" onclick="botonNota()">calcular</button>
-    <div id="res"></div>
-  </div>
-
-  <!---------------------------------------------------------------->
-  <!--div class="container">
-    <div class="row mt-3">
-        <div class="col">
-            <h2>Listado de datos</h2>
-            <div class="my-3">
-                <table class="table" id="lista-usuarios">
-                    <thead>
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <!th scope="col">Email</th>
-                        <th scope="col">Compañía</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                  </table>
-            </div>
-        </div>
+  <div id="general" class="container text-center" class="row">
+    <h2>INGRESE TU NOTA</h2>
+    <p>Te diremos si Aprobaste o Desaprobaste segun tu puntaje</p>
+    <div class="col-sm-12">
+      <input id="nota" type="text">
+      <button id="btn" onclick="botonNota()">VERIFICANDO</button>
     </div>
-</div-->
-<!---------------------------------------------------------------->
-<div class="container my-5 text-center">
-  <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
-  <div class="mt-5">
-      <table class="table">
-          <thead>
-              <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Estado</th>
-              </tr>
-          </thead>
-          <tbody id="contenido">
-              
-          </tbody>
-      </table>
+    <div class="col-sm-12" id="res"></div>
   </div>
+<!---------------------------------------------------------------->
+<div class="container my-3 text-center">
+  <button id="button1" class="btn btn-danger w-20">load data</button>
+  <button id="button2" class="btn btn-danger w-20" onclick="loadjson()">json</button>
+  
+  <table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Proyecto</th>
+        <th scope="col">Link</th>
+      </tr>
+      
+    </thead>
+    <tbody id="result"></tbody>
+
+  </table>
+  <!--div id="result"></div-->
 </div>
-
-
-
-
-
-
-
 
   <!---------------------------------------------------------------->
 
