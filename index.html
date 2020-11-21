@@ -13,9 +13,11 @@
     <script src="js/js.js"></script>
     <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
+<!---------------------------------------------------------------->
 <body>
+<!------------------BARRA DE MENU---------------------------------------------->
     <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark  bg-dark">
         <a class="navbar-brand" href="#">
           <img src="img/logo.png" alt="logo" class="img-logo" width="50">
         </a>
@@ -39,8 +41,9 @@
           </ul>
         </div>
       </nav>
-    <!---------------------------------------------------------------->
-    <div class="jumbotron img-jmbo">
+
+    <!-------------------------BANNER --------------------------------------->
+    <div class="jumbotron img-jmbo"><!--USO EL JUMBOTRON PARA OBTERNET EL BANNER CON LA IMAGEN--->
       <div class="container">
         <h1 class="text-white">BIENVENIDO</h1>
         <p class="text-white">En esta pagina les cuento mi experiencia como mis conocimiento en informatica</p>
@@ -61,7 +64,7 @@
       <h3 class="font-italic text-center">ACERCAD DE MI</h3>
       <img src="img/perfil.svg" class="rounded-circle my-3" alt="Cinque Terre" width="150" height="150">
       <div class=" align-items-center"><!--para centrar totalmente el texto al medio del contenedor-->
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center"><!--OBTENER EL TEXT EN UN CONTENEDOR Y CENTRAR EL TEXT -->
             <p class="col-sm-6 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci distinctio voluptas necessitatibus eos iste dolorum corrupti. Explicabo, hic libero amet, veniam nobis at iusto sapiente excepturi illo ad dolorem veritatis.</p> 
         </div>
         <!--div class="col-sm-6">
@@ -70,7 +73,7 @@
       </div>
     </div>
     <br>
-    <!---------------------------------------------------------------->
+    <!-----------------------USO EL JSON PARA MOSTRAR LISTADO----------------------------------------->
     <div class="container py-3 text-center bg-light table-bordered">
       <h2>MI PORTAFOLIO</h2>
       <!--button id="button1" class="btn btn-danger m-2 w-20">load data</button-->
@@ -85,21 +88,66 @@
           </tr>
           
         </thead>
-        <tbody id="result"></tbody>
+        <tbody id="result"></tbody><!--PARA IMPRIRMI EL RESULTADO-->
 
       </table>
       <!--div id="result"></div-->
     </div>
+    <!---------------------------------------------------------------->
+
+    <div class="container text-center py-3" id="4">
+      <h3 class="font-italic">EXPERIENCIA</h3>
+      <p><em>Mi trayectoria laboral</em></p>
+      <br>
+      <div class="row">
+
+        
+        <div class="col-sm-6 py-3 " >
+          <h5>SOPORTE TECNICO</h5>
+          <img id="grande" src="img/sporte.jpg" alt="Random Name">
+        </div>
+
+        <div class="col-sm-6 py-3" >
+          <h5>DISEÑO WEB</h5>
+          <!--p><strong>DISEÑO WEB</strong></p-->
+          <img id="grande1" src="img/web.jpg" alt="Random Name">
+        </div>
+
+      </div>
+
+        <div class="row">
+          
+          
+          <div class=" col-sm-6 py-3">
+            <h5>CALLCENTER</h5>
+            <!--p><strong>CALLCENTER VENTAS Y ATENCION</strong></p><br-->
+            <img id="grande2" src="img/call.jpg" alt="Random Name">
+          </div>
+
+          
+          <div class=" col-sm-6 py-3" >
+            <h5>CALLCENTER SOPORTE TECNICO</h5>
+            <!--p><strong>CALLCENTER SOPORTE TECNICO</strong></p><br-->
+            <img id="grande3" src="img/calltecnico.jpg" alt="Random Name">
+          </div>
+
+        </div>
+      
+    </div>
+    
+    <br>
 
     <!---------------------------------------------------------------->
-    <div class="container text-center py-3 bg-primary">
-      <h2 id="titulo" class="display-4 py-5">cambio de color</h2>
+    <div class="container text-center py-3 ">
+      <h2 id="titulo" class="display-4 py-5">CAMBIA DE COLOR</h2>
       <!--input type="text" id="color" class="form-control my-1" placeholder="ingrese dato"-->
-      <button id="boton" class="btn btn-dark" onclick="btn()">NEGRO</button>
+      <button id="boton" class="btn btn-primary" onclick="btn()">NEGRO</button>
 
       <button id="boton1" class="btn btn-success" onclick="btn1()">VERDE</button>
       
       <button id="boton2" class="btn btn-warning" onclick="btn2()">AMARILLO</button>
+
+      <button id="boton3" class="btn btn-danger"> OCULTAR Y MOSTAR</button> 
     </div>
 
   <!---------------------------------------------------------------->
@@ -141,32 +189,7 @@
           </div>
       </div>
       <br>
-    <!---------------------------------------------------------------->
-
-    <div class="container text-center py-3" id="4">
-      <h3 class="font-italic">EXPERIENCIA</h3>
-      <p><em>Mi trayectoria laboral</em></p>
-      <br>
-      <div class="row">
-        <div class="col-sm-3">
-          <p><strong>SOPORTE TECNICO</strong></p><br>
-          <img src="img/sporte.jpg" alt="Random Name">
-        </div>
-        <div class="col-sm-3">
-          <p><strong>DISEÑO WEB</strong></p><br>
-          <img src="img/web.jpg" alt="Random Name">
-        </div>
-        <div class="col-sm-3">
-          <p><strong>CALLCENTER VENTAS Y ATENCION</strong></p><br>
-          <img src="img/call.jpg" alt="Random Name">
-        </div>
-        <div class="col-sm-3">
-          <p><strong>CALLCENTER SOPORTE TECNICO</strong></p><br>
-          <img src="img/calltecnico.jpg" alt="Random Name">
-        </div>
-      </div>
-    </div>
-    <br>
+    
     <!---------------------------------------------------------------->
     <div class="bg-dark text-white py-3"><!--py-4 (sirva para aumentar el relleno al vorde del contenedor)-->
       <div class="container">

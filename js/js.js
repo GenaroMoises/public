@@ -1,5 +1,87 @@
+/*$(document).ready(function(){
 
-function btn(){
+    $("#btn1").click(function(){
+        $("#ocultar").toggle('slow');
+
+});
+
+});
+$(document).ready(function(){
+
+    $("#btn2").click(function(){
+        $("#ocultar1").toggle();
+
+});
+
+});*/
+
+
+$(function(){
+    $('#grande').hover(function(){
+        $(this).width(1.25*$(this).width());
+        $(this).height(1.25*$(this).height());
+    },function(){
+        $(this).width(0.8*$(this).width());
+        $(this).height(0.8*$(this).height());
+
+    })
+})
+$(function(){
+    $('#grande1').hover(function(){
+        $(this).width(1.25*$(this).width());
+        $(this).height(1.25*$(this).height());
+    },function(){
+        $(this).width(0.8*$(this).width());
+        $(this).height(0.8*$(this).height());
+
+    })
+})
+$(function(){
+    $('#grande2').hover(function(){
+        $(this).width(1.25*$(this).width());
+        $(this).height(1.25*$(this).height());
+    },function(){
+        $(this).width(0.8*$(this).width());
+        $(this).height(0.8*$(this).height());
+
+    })
+})
+$(function(){
+    $('#grande3').hover(function(){
+        $(this).width(1.25*$(this).width());
+        $(this).height(1.25*$(this).height());
+    },function(){
+        $(this).width(0.8*$(this).width());
+        $(this).height(0.8*$(this).height());
+
+    })
+})
+
+$(document).ready(function(){
+    $('#boton').click(function(){
+      $('#titulo').toggleClass('text-primary');
+    });
+  });
+  $(document).ready(function(){
+    $('#boton1').click(function(){
+      $('#titulo').toggleClass('text-success');
+    });
+  });
+  $(document).ready(function(){
+    $('#boton2').click(function(){
+      $('#titulo').toggleClass('text-warning');
+    });
+  });
+
+  $(document).ready(function(){
+    $("#boton3").click(function(){
+      $("#titulo").animate({
+        height: 'toggle'
+      });
+    });
+  });
+
+/*function btn(){
     document.getElementById('titulo').classList.add('text-dark');
     
 }
@@ -8,7 +90,7 @@ function btn1(){
 }
 function btn2(){
     document.getElementById('titulo').classList.add('text-warning');
-}
+}*/
 
 
 
