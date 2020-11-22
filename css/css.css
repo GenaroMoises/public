@@ -12,5 +12,8 @@ body{
     color: blue;
   }
 
- .efect{
- }
+.galeria{
+    column-gap: 1px;
+    padding: 1em;
+    
+}
