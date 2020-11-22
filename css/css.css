@@ -11,9 +11,39 @@ body{
 .blue {
     color: blue;
   }
+  
+  .base{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1000px;/** acomoda la imagen*/
+      margin: auto;
+  }
 
-.galeria{
-    column-gap: 1px;
-    padding: 1em;
+  .titulo{
+    text-align: center;
+      color: rgb(205, 224, 245);
+      margin: auto;
+      
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .bloque{
     
+    display: block;
+    width: 45%;
+    height: 220px;
+    
+    
+    background: #fe4;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 1.5%;
+    cursor: pointer;
 }
