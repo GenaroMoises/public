@@ -2,22 +2,22 @@
     {
         "Id": 1,
         "Proyecto": "Mi primera Pagina web",
-        "Link": "bob dylan"
+        "Link": "DESCARGAR"
     },
     {
         "Id": 2,
         "Proyecto": "Investigacion ",
-        "Link": "bob dylan"
+        "Link": "DESCARGAR"
     },
     {
         "Id": 3,
-        "Proyecto": "empire burlesque",
-        "Link": "bob dylan"
+        "Proyecto": "Mi aplicativo Movil",
+        "Link": "DESCARGAR"
     },
     {
         "Id": 4,
-        "Proyecto": "empire burlesque",
-        "Link": "bob dylan"
+        "Proyecto": "Tesis 2020",
+        "Link": "DESCARGAR"
     }
     
 ]

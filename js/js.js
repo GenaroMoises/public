@@ -133,7 +133,10 @@ function loadjson(){
             <tr>
                 <th scope="row">${datos.Id}</th>
                 <td>${datos.Proyecto}</td>
-                <td>${datos.Link}</td>
+                <td><a target="_blank" href="https://drive.google.com/">
+                <button>${datos.Link}</button
+                </a></td>
+                
             </tr>
             `
         })
